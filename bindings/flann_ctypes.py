@@ -75,7 +75,7 @@ class CustomStructure(Structure):
 
     def __translate_back(self, k, v):
         if k in self._translation_:
-            for tk, tv in self._translation_[k].iteritems():
+            for tk, tv in self._translation_[k].items():
                 if tv == v:
                     return tk
         return v
